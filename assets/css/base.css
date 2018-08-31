@@ -6,13 +6,14 @@
   height: 300vh;
   width: 100%;
   position: absolute;
+  background-color: black;
 }
 
 .bg
 {
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/bg.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -20,7 +21,8 @@
 
 #navbar
 {
-  transition: top 0.3s;
+  z-index: 100;
+  transition: top 0.5s;
   position: fixed;
 
   float: left;
@@ -51,27 +53,30 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-.container
-{
-  width: 450px;
-  left: calc(50vw - 225px);
-  top: 30vh;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.mainCont_Wrapper {
+    position: relative;
+    top: 20vh;
+    margin: 3% 15%;
 }
 
-.container h2
+.mainCont
+{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 500px;
+  color: white;
+}
+
+.mainCont h2
 {
   font-size: 60px;
   font-weight: bold;
 }
 
-.container p
+.mainCont p
 {
-  font-size: 30px;
-  font-weight: lighter;
-  color: white;
+  font-size: 25px;
 }
 
 
@@ -80,3 +85,37 @@ ul.topnav li a:hover:not(.active) {background-color: #111;}
 ul.topnav li a.active {background-color: #4CAF50;}
 
 ul.topnav li.right {float: right;}
+
+.hidden
+{
+  display: none !important;
+}
+
+.show
+{
+  display: block;
+}
+
+.arrow.down
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("/assets/images/arr_down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: calc(100vh - 80px);
+  left: calc(50vw - 30px);
+}
+
+.arrow.up
+{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: url("/assets/images/arr_up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: calc(100vh - 80px);
+  left: calc(100vw - 100px);
+}

@@ -1,9 +1,27 @@
+
+
+
+
+
+@media screen and (min-width: 600px)
+{
+  .bg
+  {
+    background-image: url("/assets/images/bg.jpg");
+  }
+}
+
+
 @media screen and (max-width: 600px)
 {
-    ul.topnav li.right,
-    ul.topnav li
-    {
-      float: none;
-    }
+  .bg
+  {
+    background-image: url("/assets/images/bg_phone.jpg");
+  }
 
+  ul.topnav li.right,
+  ul.topnav li
+  {
+    float: none;
+  }
 }
