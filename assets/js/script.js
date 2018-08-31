@@ -21,11 +21,11 @@ $(document).ready(function() {
       document.getElementById("navbar").style.top = "0";
       $(".arrow.up").removeClass('hidden');
       $(".arrow.up").removeClass('hidden');
-      $(".container").addClass('hidden');
+      $(".mainCont").addClass('hidden');
     } else {
       document.getElementById("navbar").style.top = "-60px";
       $(".arrow.up").addClass('hidden');
-      $(".container").removeClass('hidden');
+      $(".mainCont").removeClass('hidden');
     }
   });
 
