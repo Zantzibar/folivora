@@ -1,19 +1,104 @@
 
 
-.bg_container
+.shape-prism-demo.animate {
+    animation: shape-prism-demo 5s linear infinite;
+}
+
+@keyframes shape-prism-demo {
+    100% {
+        transform: rotateY(495deg);
+    }
+}
+.shape-prism-demo {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateY(135deg);
+}
+
+.shape-prism-demo .tcface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.shape-prism-demo .sfront {
+  width: 100px;
+  height: 100px;
+    transform-origin: 50% 0;
+    background: #de33d4;
+    transform: rotateX(-22.619864948040426deg);
+}
+
+.shape-prism-demo .sback {
+  width: 100px;
+  height: 100px;
+    transform-origin: 50% 0;
+    background: #aff22c;
+    transform: rotateX(22.619864948040426deg);
+}
+
+.shape-prism-demo .sleft {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 60px solid #15551f;
+    transform: rotateY(-90deg);
+    left: -25px;
+}
+
+.shape-prism-demo .sright {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 60px solid #d20ddb;
+    transform: rotateY(-90deg);
+    left: 35px;
+}
+
+.shape-prism-demo .sbottom {
+    transform: rotateX(90deg);
+    background: #744dbf;
+    top: 50px;
+}
+
+
+#boxdemo
 {
-  overflow-x: hidden;
-  height: 300vh;
+  height: 100%;
   width: 100%;
+  top: calc(50vh - 80px);
+  left: calc(50vw - 30px);
+
+  margin: 0;
+  padding: 0 !important;
+
   position: absolute;
+  perspective: 3000px;
+}
+
+html,
+.container,
+#prism-slider
+{
+  height: 300vh;
+  width: 100vw;
   background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .bg
 {
   height: 100vh;
-  width: 100%;
-
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
