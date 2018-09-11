@@ -16,7 +16,6 @@ $(document).ready(function() {
   $('.arrow.up').click(function (event) {
     //$(".arrow.up").toggle('show');
   });
-asdasd
 
   $(window).on('scroll', function() {
 
